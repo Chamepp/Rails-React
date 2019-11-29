@@ -62,25 +62,22 @@ export const fetchProductsFailure = (error) => {
 };
 
 
+export function fetchProducts() {
 
-export const fetchProducts = () => {
-
-    return (dispatch) => {
-        dispatch(fetchProductsRequest());
-        axios
-          .get("/api/v1/index/products")
-          .then((response) => {
-            // response.data is the products
-            const products = response.data.products;
-            dispatch(fetchProductsSuccess(products));
-          })
-          .catch((error) => {
-            // error.message is the error message
-            dispatch(fetchProductsFailure(error.message));
-          });
-    };
+  return (dispatch) => {
+      dispatch(fetchProductsRequest());
+      axios
+        .get("/api/v1/products/index")
+        .then((response) => {
+          const products = response.data.products;
+          dispatch(fetchProductsSuccess(products));
+        })
+        .catch((error) => {
+          // error.message is the error message
+          dispatch(fetchProductsFailure(error.message));
+        });
+  };
 };
-
 
 
 
