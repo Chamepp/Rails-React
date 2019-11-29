@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 // Redux
 import { connect } from "react-redux";
 import { loadCurrentItem, addToCart, fetchProducts } from "./action";
+import { bool } from "prop-types";
 
 
 
@@ -26,22 +27,12 @@ const Product = ({
 }) => {
 
 
-  const [currentApi, setCurrentApi] = useState("/api/v1/products/index");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-
-
-  const handlePage = (e, { activePage }) => {
-    var pageNum = activePage;
-    let pageString = pageNum.toString();
-    let url = "/api/v1/products/index/?page=" + pageString;
-    console.log(url);
-    setCurrentApi(url);
-  }
 
   useEffect(() => {
     AOS.init({});
-  });
+    fetchProducts();
+  }, []);
+
 
   return (
     <>
@@ -96,16 +87,6 @@ const Product = ({
         </div>
       ))}
     </div>
-    <Pagination className="product-pagination" onPageChange={handlePage} defaultActivePage={currentPage} totalPages={totalPages}
-    data-aos="fade-up"
-    data-aos-offset="200"
-    data-aos-delay="60"
-    data-aos-duration="4000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="center"
-    />
     </>
   );
 };
@@ -121,7 +102,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addToCart: (id) => dispatch(addToCart(id)),
     loadCurrentItem: (item) => dispatch(loadCurrentItem(item)),
-    fetchProducts: (currentApi) => dispatch(fetchProducts(currentApi)),
+    fetchProducts: () => dispatch(fetchProducts()),
   };
 };
 
