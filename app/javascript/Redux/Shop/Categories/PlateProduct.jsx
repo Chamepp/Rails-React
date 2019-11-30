@@ -41,17 +41,7 @@ const Product = ({
 
   useEffect(() => {
     AOS.init({});
-    fetchProducts(currentApi);
-    axios
-      .get("/api/v1/products/index", { withCredentials: true })
-      .then((response) => {
-        setCurrentPage(response.data.page);
-        setTotalPages(response.data.pages);
-      })
-      .catch((error) => {
-        console.log("Check Login Error", error);
-      });
-  }, [currentApi, currentPage, totalPages]);
+  });
 
   return (
     <>
