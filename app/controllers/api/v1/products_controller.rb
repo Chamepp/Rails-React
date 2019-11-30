@@ -3,7 +3,7 @@ class Api::V1::ProductsController < ApplicationController
 
   # Main Preview
   def index
-    @product = Product.paginate(:page => params[:page], per_page: 3).order(created_at: :desc)
+    @product = Product.paginate(:page => params[:page], per_page: 10).order(created_at: :desc)
     @allProducts = Product.all
   
     
