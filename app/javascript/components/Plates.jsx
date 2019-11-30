@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Product from "../Redux/Shop/Categories/PlateProduct";
+import PlateProduct from "../Redux/Shop/Categories/PlateProduct";
 import axios from "axios";
 import AOS from "aos";
 import "../style/plate.css";
@@ -10,7 +10,6 @@ import Logo from "../files/Logo.png";
 import ItemFour from "../files/Item-Four.png";
 import ItemFive from "../files/Item-Five.png";
 import ItemSix from "../files/Item-Six.png";
-import PlateProduct from "../Redux/Shop/Categories/PlateProduct";
 
 class Plates extends React.Component {
 
@@ -72,121 +71,6 @@ class Plates extends React.Component {
             type="text"
             placeholder="Search Plates"
           />
-        </div>
-        {/* Item Cards */}
-        {/* Deck One */}
-        <div className="card-deck d-flex justify-content-center">
-          {/* Card One */}
-          <div className="card item-card">
-            {/* Header Image */}
-            <img className="card-img-top" src={ItemFour} alt="Card image cap" />
-            {/* Card Body */}
-            <div className="card-body">
-              <h4 className="card-title">Health Plate</h4>
-              <h5 className="card-title">$ 199</h5>
-              <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-              <a href="#" className="btn btn-primary">
-                + Add To Cart
-              </a>
-              <a href="#" className="btn btn-danger">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  className="bi bi-heart-fill"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                  />
-                </svg>
-              </a>
-            </div>
-            {/* Card Footer */}
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-          {/* Card Two */}
-          <div className="card item-card">
-            {/* Header Image */}
-            <img className="card-img-top" src={ItemFive} alt="Card image cap" />
-            {/* Card Body */}
-            <div className="card-body">
-              <h4 className="card-title">Nice Cups</h4>
-              <h5 className="card-title">$ 29</h5>
-              <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-              <a href="#" className="btn btn-primary">
-                + Add To Cart
-              </a>
-              <a href="#" className="btn btn-danger">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  className="bi bi-heart-fill"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                  />
-                </svg>
-              </a>
-            </div>
-            {/* Card Footer */}
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
-          {/* Card Three */}
-          <div className="card item-card">
-            {/* Header Image */}
-            <img className="card-img-top" src={ItemSix} alt="Card image cap" />
-            {/* Card Body */}
-            <div className="card-body">
-              <h4 className="card-title">Unique Folks</h4>
-              <h5 className="card-title">$ 11</h5>
-              <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-              <a href="#" className="btn btn-primary">
-                + Add To Cart
-              </a>
-              <a href="#" className="btn btn-danger">
-                <svg
-                  width="1em"
-                  height="1em"
-                  viewBox="0 0 16 16"
-                  className="bi bi-heart-fill"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                  />
-                </svg>
-              </a>
-            </div>
-            {/* Card Footer */}
-            <div className="card-footer">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
         </div>
         <PlateProduct />
         <Footer />
