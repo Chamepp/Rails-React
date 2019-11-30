@@ -63,14 +63,12 @@ export const fetchProductsFailure = (error) => {
 
 
 
-export const fetchProducts = (url) => {
-  var cool = url;
-  console.log(cool);
+export const fetchProducts = () => {
+
     return (dispatch) => {
-        console.log(cool);
         dispatch(fetchProductsRequest());
         axios
-          .get(cool)
+          .get("/api/v1/index/products")
           .then((response) => {
             // response.data is the products
             const products = response.data.products;
