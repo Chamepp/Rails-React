@@ -1,0 +1,301 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+.instruction {
+    margin-top: 30px;
+}
+
+.login-card {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 36rem;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+
+
+/* Login Credentials */
+
+.email-section {
+	margin-top: 50px;
+}
+
+.email-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.email-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.email-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.email-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.email-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.email-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.email-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.email-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.email-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+
+
+.password-section {
+    margin-top: 50px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.password-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.password-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.password-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.password-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.password-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.password-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.password-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.password-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.password-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+.instruction {
+    margin-top: 30px;
+}
+
+.login-card {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 36rem;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+
+
+/* Login Credentials */
+
+.admin-email-section {
+	margin-top: 50px;
+}
+
+
+.admin-password-section {
+    margin-top: 50px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* Finalization */
+
+.login-section {
+    margin-top: 100px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.admin-login-section {
+    margin-top: 100px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main-login-button {
+    padding: 20px 50px;
+    background-color: #1e62bb;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-login-button:hover {
+    background-color: #15478a;
+}
+
+.admin-login-button {
+    padding: 20px 50px;
+    background-color: #1e62bb;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+.admin-login-button:hover {
+    background-color: #15478a;
+}
+
+
+/* Background Animation */
+
+@-webkit-keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@-moz-keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}

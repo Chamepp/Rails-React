@@ -1,0 +1,508 @@
+
+/* Main Basics */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Bars */
+.main-hr {
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px;
+  border: solid;
+  border-radius: 10px 10px 10px 10px;
+  width: 250px;
+  border-color: #0988ff;
+}
+
+/* NavBar */
+.navbar {
+  width: 100%;
+  height: 100px;
+}
+
+.nav-items {
+  margin-right: 30px;
+}
+
+.nav-items a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+.nav-items a:hover {
+  color: cornflowerblue;
+}
+
+/* User Buttons */
+.user-buttons button {
+  margin-right: 20px;
+}
+
+.user-buttons a {
+  text-decoration: none;
+}
+
+.nav-login-button {
+  padding: 10px 30px;
+  color: white;
+  background-color: #1e62bb;
+  border-color: #1e62bb;
+  font-size: 20px;
+  font-family: "Fredoka One", cursive;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.nav-login-button:hover {
+  background-color: rgb(102, 102, 255);
+  background-color: radial-gradient(
+    circle,
+    rgba(102, 102, 255, 1) 35%,
+    rgba(31, 99, 170, 1) 100%
+  );
+}
+
+.nav-signup-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-color: #1e62bb;
+  color: #1e62bb;
+  font-size: 20px;
+  font-family: "Fredoka One", cursive;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.nav-signup-button:hover {
+  background-color: rgb(102, 102, 255);
+  background-color: radial-gradient(
+    circle,
+    rgba(102, 102, 255, 1) 35%,
+    rgba(31, 99, 170, 1) 100%
+  );
+  color: white;
+}
+
+
+.badge {
+  left: 30px;
+}
+
+/* Welcome */
+.home-welcome {
+  min-height: 90vh;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Welcome Part One */
+.home-welcome-part-one h1 {
+  margin-left: 60px;
+  font-size: 70px;
+  letter-spacing: 5px;
+  color: rgb(21, 101, 206);
+  font-weight: 900;
+  font-family: "Fredoka One", cursive;
+}
+
+.home-welcome-part-one p {
+  margin-top: 20px;
+  margin-left: 60px;
+  color: rgb(72, 151, 255);
+  font-family: "Fredoka One", cursive;
+}
+
+.home-welcome-part-one button {
+  margin-top: 10px;
+  margin-left: 60px;
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #1565CE;
+  color: white;
+  font-size: 20px;
+  font-family: "Fredoka One", cursive;
+}
+
+.home-welcome-part-one button:hover {
+  background-color: #1565CE;
+}
+
+.home-welcome-part-one svg {
+  margin-left: 10px;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.home-welcome-part-one button:hover svg {
+  transform: translateX(10px);
+}
+
+
+/* Welcome Part Two */
+.home-welcome-part-two img {
+  width: 900px;
+  height: 700px;
+  border-radius: 60px 60px 60px 60px;
+}
+
+/* Why Us */
+.home-why-us {
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+}
+
+.home-why-us h1 {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.home-why-us p {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* SlideShow */
+.home-slide-show {
+  width: 100%;
+  height: 500px;
+}
+
+.home-slide-show img {
+  width: 500px;
+  height: 500px;
+}
+
+/* Info */
+.home-info {
+  min-height: 100vh;
+  margin-top: 150px;
+  background-color: #026CED;
+  clip-path: polygon(5% 21%, 9% 8%, 35% 0%, 65% 0%, 91% 10%, 93% 20%, 96% 51%, 89% 80%, 64% 94%, 33% 94%, 8% 79%, 2% 48%);
+}
+
+.home-info img {
+  margin-top: 50px;
+}
+
+.home-info h1 {
+  margin-top: 40px;
+  font-size: 80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+
+
+.home-searchbar {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border: none;
+  border-radius: 60px 60px 60px 60px;
+  outline: none;
+  max-width: 650px;
+  min-height: 50px;
+  position: relative;
+  display: flex;
+}
+
+
+
+/* Frequently Asked */
+
+.home-faq-nav {
+  flex-direction: column;
+  margin: 0 0 32px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+
+.home-faq-nav .nav-link {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 13px 16px;
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  color: #616161;
+  transition: background-color 0.2s ease;
+}
+
+.home-faq-nav .nav-link:hover {
+  background-color: #f6f6f6;
+}
+
+.home-faq-nav .nav-link.active {
+  background-color: #f6f6f6;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.home-faq-nav .nav-link:last-of-type {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom: 0;
+}
+
+.home-faq-nav .nav-link i.mdi {
+  margin-right: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+.home-tab-content {
+  box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+
+.home-tab-content .card {
+  border-radius: 0;
+}
+
+.home-tab-content .card-header {
+  padding: 15px 16px;
+  border-radius: 0;
+  background-color: #f6f6f6;
+}
+
+.home-tab-content .card-header h5 {
+  margin: 0;
+}
+
+.home-tab-content .card-header h5 button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: left;
+  white-space: normal;
+}
+
+.home-tab-content .card-header h5 button:hover,
+.tab-content .card-header h5 button:focus,
+.tab-content .card-header h5 button:active,
+.tab-content .card-header h5 button:hover:active {
+  text-decoration: none;
+}
+
+.home-tab-content .card-body p {
+  color: #616161;
+}
+
+.home-tab-content .card-body p:last-of-type {
+  margin: 0;
+}
+
+.home-accordion > .card:not(:first-child) {
+  border-top: 0;
+}
+
+.home-collapse.show .card-body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+
+/* Text Animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 300px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background-color: #026CED;
+  color: #fff;
+}
+
+.footer-title {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.footer-title:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 4px;
+  background: black;
+}
+
+.footer-links a {
+  padding: 10px 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  display: block;
+  transition: color 0.5s ease-in-out;
+  text-decoration:none;
+}
+
+.footer-links a:hover {
+  color: #1a2a85;
+}
+
+.footer-social-links li {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.footer-social-links a {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  background-color: #095FEA;
+}
+
+.footer-social-links a:hover {
+  background: #1a2a85;
+}
+
+.footer-bottom {
+  width: 100%;
+  padding: 25px 0;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  background: rgb(9, 95, 234);
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+.cart-button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.carousel {
+  margin-top: 80px;
+}
+
+.carousel img {
+  max-height: 80vh;
+}
+

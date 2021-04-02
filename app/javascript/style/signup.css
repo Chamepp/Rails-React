@@ -1,0 +1,505 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+.main-instruction {
+    margin-top: 30px;
+}
+
+.main-signup-card {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 36rem;
+    height: 40rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    display: inline-block;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+}
+
+.main-card-img-top {
+    height: 150px;
+    width: 550px;
+    display: inline-block;
+    animation: fadeIn ease 1.2s;
+    -webkit-animation: fadeIn ease 1.2s;
+}
+
+
+
+/* Login Credentials */
+.main-name-section {
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main-name-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main-name-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.main-name-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.main-name-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.main-name-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-name-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-name-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.main-name-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-name-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+
+
+
+
+/* Phone Section */
+.main-phone-section {
+	margin-top: 20px;
+}
+
+.main-phone-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main-phone-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.main-phone-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.main-phone-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.main-phone-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-phone-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-phone-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.main-phone-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-phone-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+
+
+
+
+
+/* Email Section */
+.main-email-section {
+	margin-top: 20px;
+}
+
+.main-email-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main-email-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.main-email-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.main-email-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.main-email-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-email-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-email-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.main-email-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-email-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+
+
+
+
+
+/* Phone Section */
+.main-password-section {
+    margin-top: 20px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main-password-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.main-password-label .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.main-password-label .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.main-password-label input {
+    margin-right: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.main-password-label input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.main-password-label input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-password-label input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.main-password-label input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.main-password-label input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
+
+
+/* Finalization */
+
+.main-signup-section {
+    margin-top: 40px;
+	padding: 0;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.main-signup-button {
+    padding: 20px 50px;
+    background-color: #1e62bb;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.main-signup-button:hover {
+    background-color: #15478a;
+}
+
+
+/* Flash Messages */
+.flash-message-info {
+    width: 100%;
+    padding: 20px;
+    background-color: #01ffb3;
+    color: white;
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+    animation: fadeIn ease 3.5s;
+    -webkit-animation: fadeIn ease 3.5s;
+    -moz-animation: fadeIn ease 3.5s;
+    -o-animation: fadeIn ease 3.5s;
+    -ms-animation: fadeIn ease 3.5s;
+}
+
+
+
+/* Background Animation */
+
+@-webkit-keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@-moz-keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+@keyframes BackgroundDude {
+    0%{background-position:0% 13%}
+    50%{background-position:100% 88%}
+    100%{background-position:0% 13%}
+}
+
+
+/* Flash Animations */
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+
+
+
+/* Text Animation */
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }

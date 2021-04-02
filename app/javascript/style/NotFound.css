@@ -1,0 +1,24 @@
+
+.notfound-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.NotFoundImage {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.back-btn {
+    width: 100px;
+    margin: 0 auto; 
+}
+
+.back-btn a {
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: 900;
+}
