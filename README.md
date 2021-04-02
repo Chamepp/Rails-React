@@ -1,24 +1,22 @@
-# README
+# Rails React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample of Rails React WebApp using Rails as the ReastAPI and React as FrontEnd.
+
+### Comming Soon ...
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* Rails Version
+* Ruby Version
+* Database Type
+* Deployment Instructions
+* State Mangement
+* Data Fetching by FrontEnd State
+* Persistance Data By Front State Management
+* User Friendly Interface
+* React Packages
+* User Authentication
+* Animations
+* Pagination
+* Random Recommender
 * ...
