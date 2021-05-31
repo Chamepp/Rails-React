@@ -1,8 +1,5 @@
-
-
-
 1.times do |index|
-    users = User.create!(
+    users = User.create! (
         firstname: 'Ashkan',
         lastname: 'Ebtekari',
         phone: '347325654',
@@ -15,7 +12,7 @@ puts('Created User Successfully !')
 
 
 20.times do |index|
-    products = Product.create!(
+    products = Product.create! (
         number: index,
         title: "Title #{index}",
         price: "#{index}",
