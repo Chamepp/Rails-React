@@ -41,7 +41,7 @@ class Plates extends React.Component {
     <br /> <br /> <br />
     <h1 className="hello text-center animated animatedFadeInUp fadeInUp">Plates</h1>
     {/* SearchBar */}
-    <input className="herbal-searchbar form-control animated animatedFadeInUp fadeInUp" type="text" placeholder="Search Herbals" />
+    <input className="herbal-searchbar form-control animated animatedFadeInUp fadeInUp" type="text" placeholder="Search Plates" />
   </div>
   {/* Item Cards */}
   {/* Deck One */}
