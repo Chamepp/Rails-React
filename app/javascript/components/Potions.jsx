@@ -43,7 +43,7 @@ class Potions extends React.Component {
     <br /> <br /> <br />
     <h1 className="potion-hello text-center animated animatedFadeInUp fadeInUp">Potions</h1>
     {/* SearchBar */}
-    <input className="potion-searchbar form-control animated animatedFadeInUp fadeInUp" type="text" placeholder="Search Herbals" />
+    <input className="potion-searchbar form-control animated animatedFadeInUp fadeInUp" type="text" placeholder="Search Potions" />
   </div>
   {/* Item Cards */}
   {/* Deck One */}
