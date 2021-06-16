@@ -20,6 +20,7 @@ class Products extends React.Component {
           price: "",
           category: "",
           description: "",
+          image: "",
           charData: {
               datasets: [{
                   label: 'HarryPotter',
@@ -98,46 +99,59 @@ class Products extends React.Component {
         this.onSubmit = this.onSubmit.bind(this);
     }
 
-      onChange(event) {
-        this.setState({ [event.target.name]: event.target.value });
-      }
-  
+    onChange(event) {
+      this.setState({ [event.target.name]: event.target.value });
+    }
+
+
+
     onSubmit(event) {
         event.preventDefault();
         this.setState({ showMessage: false });
         
-        const { number, title, price, category, description } = this.state;
-  
-  
+        const { number, title, price, category, description, image } = this.state;
+        let data = new FormData();
+
         const body = {
             number,
             title,
             price,
             category,
-            description
+            description,
+            image
         };
+
+        var imageData = document.querySelector('input[type="file"]').files[0];
+
+        data.append('product[number]',  number);
+        data.append('product[title]', title);
+        data.append('product[price]', price);
+        data.append('product[category]', category);
+        data.append('product[description]', description);
+        data.append('product[image]', imageData);
   
         const token = document.querySelector('meta[name="csrf-token"]').content;
-        fetch("/api/v1/products/create", {
-            method: "POST",
-            headers: {
-                "X-CSRF-Token": token,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(body)
+        axios({
+          method: "POST",
+          url: "/api/v1/products/create",
+          data: data,
+          headers: {
+            "X-CSRF-Token": token,
+            "Content-Type": "application/json"
+          }
         })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                throw new Error("Network response was not ok.");
-            })
-            .then(response => this.props.history.push(`/products/${response.id}`))
-            .catch(error => console.log(error.message));
-            this.setState({ showMessage: true });
-            setTimeout(() => {
-              this.props.history.push('/');
-            }, 3000);
+        .then(response => {
+          if (response.ok) {
+              return response.json();
+          }
+          throw new Error("Network response was not ok.");
+          })
+          .then(response => this.props.history.push(`/products/${response.id}`))
+          .catch(error => console.log(error.message));
+          this.setState({ showMessage: true });
+          setTimeout(() => {
+            this.props.history.push('/');
+        }, 3000);
     }
 
 
@@ -255,6 +269,11 @@ class Products extends React.Component {
           {/* Description */}
           <label htmlFor="description">Description</label>
           <textarea type="text" className="form-control" name="description" id="description" placeholder=" " value={this.state.description} onChange={this.onChange} required />
+        </div> <br />
+        <div className="product-fourth-section">
+          {/* Image */}
+          <label htmlFor="image">Image</label>
+          <input type="file" onChange={this.onUpload} />
         </div> <br />
         <div>
           {/* Finalization */}
