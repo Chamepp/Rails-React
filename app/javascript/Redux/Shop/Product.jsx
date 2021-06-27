@@ -71,7 +71,7 @@ const Product = ({
         >
           {/* Admin Card */}
           {/* Header Image */}
-          <img className="card-img-top" src={ItemOne} alt="Card image cap" />
+          <img className="card-img-top" src={product.image_url} alt="Card image cap" />
           {/* Card Body */}
           <div className="card-body">
             <h4 className="card-title">{product.title}</h4>
