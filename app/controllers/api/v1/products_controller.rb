@@ -1,17 +1,22 @@
 class Api::V1::ProductsController < ApplicationController
-  
+
+
   # Main Preview
   def index
     @product = Product.paginate(:page => params[:page], per_page: 3).order(created_at: :desc)
     @allProducts = Product.all
+  
     
     render json: {
-      products: @product,
+      products: @product.as_json(methods: :image_url),
       allProducts: @allProducts,
       page: @product.current_page,
       pages: @product.total_pages
     }
   end
+
+
+
 
   # Create Products
   def create
