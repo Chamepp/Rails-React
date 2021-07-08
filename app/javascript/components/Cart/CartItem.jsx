@@ -30,7 +30,7 @@ const CartItem = ({ itemData, adjustItemQuantity, removeFromCart }) => {
   return (
     <div className="row">
         <div className="row main align-items-center">
-        <div className="col-2"><img className="img-fluid" src="https://picsum.photos/seed/picsum/200/300" /></div>
+        <div className="col-2"><img className="img-fluid" src={itemData.image_url} /></div>
         <div className="col">
   <div className="row text-muted">{itemData.category}</div>
             <div className="row">{itemData.title}</div>
