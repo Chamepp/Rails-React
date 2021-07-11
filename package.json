@@ -24,6 +24,7 @@
     "react-flash-message": "^1.0.5",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.1",
     "react-ultimate-pagination": "^1.2.0",
     "react-vis": "^1.11.7",
     "redux": "^4.0.5",
