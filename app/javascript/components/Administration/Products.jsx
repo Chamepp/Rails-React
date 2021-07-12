@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../style/administration.css";
 import { Bubble } from 'react-chartjs-2';
+import Select from "react-select";
 import SideNav from "../SideNav";
 import Logo from "../../files/Logo.png";
 import axios from "axios";
@@ -21,6 +22,12 @@ class Products extends React.Component {
           category: "",
           description: "",
           image: "",
+          selectOptions: [
+            { value: 'Herbals', label: 'Herbals' },
+            { value: 'Packs', label: 'Packs' },
+            { value: 'Potions', label: 'Potions' },
+            { value: 'Plates', label: 'Plates' }
+          ],
           charData: {
               datasets: [{
                   label: 'HarryPotter',
@@ -103,7 +110,9 @@ class Products extends React.Component {
       this.setState({ [event.target.name]: event.target.value });
     }
 
-
+    onSelect(event){
+      this.setState({ category: event.value })
+    }
 
     onSubmit(event) {
         event.preventDefault();
@@ -260,7 +269,7 @@ class Products extends React.Component {
         <div className="product-second-section">
           {/* Category */}
           <label htmlFor="category">Category</label>
-          <input type="text" className="form-control" name="category" id="category" placeholder=" " value={this.state.category} onChange={this.onChange} required /> <br />
+          <Select options={this.state.selectOptions} onChange={this.onSelect.bind(this)} required />
           {/* Price */}
           <label htmlFor="price">Price</label>
           <input type="number" className="form-control" name="price" id="price" placeholder=" " value={this.state.price} onChange={this.onChange} required />
