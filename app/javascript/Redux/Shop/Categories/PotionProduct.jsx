@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Pagination } from 'semantic-ui-react';
-import "../../../style/frequentlyasked.scss";
+import "../../../style/frequentlyasked.css";
 import ItemOne from "../../../files/Item-One.png";
 import AOS from 'aos';
 import "aos/dist/aos.css";
