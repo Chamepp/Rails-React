@@ -1,0 +1,159 @@
+/* Main Basics */
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+/* Bars */
+.main-hr {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px;
+    border: solid;
+    border-radius: 10px 10px 10px 10px;
+    width: 250px;
+    border-color: #0988ff;
+}
+/* NavBar */
+.navbar {
+    width: 100%;
+    height: 100px;
+}
+.nav-items {
+    margin-right: 30px;
+}
+.nav-items a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+.nav-items a:hover {
+    color: cornflowerblue;
+}
+/* User Buttons */
+.user-buttons button {
+    margin-right: 20px;
+}
+.user-buttons a {
+    text-decoration: none;
+}
+.login-button {
+    padding: 10px 30px;
+    background-color: #1e62bb;
+    border-color: #1e62bb;
+    font-size: 20px;
+    font-family: "Fredoka One", cursive;
+    transition: background-color 0.5s ease-in-out;
+}
+.login-button:hover {
+    background-color: #66f;
+    background-color: radial-gradient(circle, rgba(102, 102, 255, 1) 35%, rgba(31, 99, 170, 1) 100%);
+}
+.login-button a {
+    color: white;
+}
+.signup-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-color: #1e62bb;
+    font-size: 20px;
+    font-family: "Fredoka One", cursive;
+    transition: background-color 0.5s ease-in-out;
+}
+.signup-button:hover {
+    background-color: #66f;
+    background-color: radial-gradient(circle, rgba(102, 102, 255, 1) 35%, rgba(31, 99, 170, 1) 100%);
+}
+.signup-button a {
+    color: #1e62bb;
+}
+.signup-button:hover a {
+    color: white;
+}
+/* Info */
+.herbal-info {
+    min-height: 500px;
+    background-image: url("../files/Herbal-Background.png");
+}
+.herbal-info h1 {
+    font-size: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+.herbal-searchbar {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    min-height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 60px 60px 60px 60px;
+    outline: none;
+}
+/* Item Cards */
+.card-deck {
+    margin-top: 70px;
+}
+.card-img-top {
+    height: 200px;
+}
+.card-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+.item-card {
+    max-width: 25vw;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    transition: all 0.2s ease-in-out !important;
+}
+.item-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 20px 20px #e9e9e9;
+}
+.btn-primary {
+    padding: 10px 30px;
+    background-color: #026ced;
+}
+.btn-danger {
+    margin-left: 10px;
+    padding: 14px 14px;
+}
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+   }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+   }
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0);
+   }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+   }
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+}
+.animatedFadeInUp {
+    opacity: 0;
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
