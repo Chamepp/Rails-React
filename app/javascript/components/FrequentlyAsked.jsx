@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../style/frequentlyasked.scss";
+import "../style/frequentlyasked.css";
 import $ from "jquery";
 import AOS from "aos";
 import "aos/dist/aos.css";

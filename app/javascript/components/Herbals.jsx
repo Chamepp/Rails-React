@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Product from "../Redux/Shop/Product";
-import "../style/herbal.scss";
+import "../style/herbal.css";
 import axios from "axios";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
